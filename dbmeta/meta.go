@@ -3,6 +3,7 @@ package dbmeta
 import (
 	"database/sql"
 	"fmt"
+	"github.com/serenize/snaker"
 	"strings"
 
 	"github.com/jimsmart/schema"
@@ -128,7 +129,7 @@ func generateFieldsTypes(db *sql.DB, columns []*sql.ColumnType, depth int, jsonA
 
 		}
 		if jsonAnnotation == true {
-			annotations = append(annotations, fmt.Sprintf("json:\"%s\"", key))
+			annotations = append(annotations, fmt.Sprintf("json:\"%s\"", snaker.SnakeToCamelLower(key)))
 		}
 		if len(annotations) > 0 {
 			field = fmt.Sprintf("%s %s `%s`",

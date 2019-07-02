@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+vendor/
+apiserver/ump-apiserver
+**/var
+**/*.tar.gz
+**/tmp
+apiserver/static/**
+apiserver/gitversion
+.vscode
+apiserver/apiserver
+ump-static
