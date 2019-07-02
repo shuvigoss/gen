@@ -18,7 +18,7 @@ gen is based/inspired by the work of Seth Shelnutt's [db2struct](https://github.
 ## Usage
 
 ```BASH
-go get github.com/smallnest/gen
+go get github.com/shuvigoss/gen
 gen --connstr "root@tcp(127.0.0.1:3306)/employees?&parseTime=True" --database employees  --json --gorm --guregu --rest
 ```
 
