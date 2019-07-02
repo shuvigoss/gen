@@ -3,7 +3,7 @@ WORKDIR=`pwd`
 default: build
 
 install:
-	go get github.com/smallnest/gen
+	go get github.com/shuvigoss/gen
 
 vet:
 	go vet .
